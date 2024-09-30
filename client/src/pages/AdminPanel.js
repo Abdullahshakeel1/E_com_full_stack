@@ -19,7 +19,7 @@ const AdminPanel = () => {
         {/* checkekekkekekeke */}
         <aside className='bg-white min-h-full w-full max-w-60 custumShadow md:block hidden'>
             <div className='h-32    flex justify-center items-center  flex-col'>
-            <div className='text-5xl relative cursor-pointer flex justify-center'>
+            <div className='text-5xl relative cursor-pointer flex justify-center mt-2'>
                     {user?.profilePic ?(
                         <img src={user.profilePic}
                          alt={user?.user?.name} 
@@ -37,15 +37,15 @@ const AdminPanel = () => {
                 <nav className=' grid p-4 text-center text-ellipsis'>
                     <div className='border-b  hover:bg-slate-100 rounded py-2 px-1'>
 
-                     <Link to={"all-user"} className='px-2 py-1 text-center text-ellipsis ' >  All Users</Link>
+                     <Link to={"all-user"} className='px-2 py-1 text-center text-ellipsis font-medium ' >  All Users</Link>
                     </div>
                     <div className='border-b  hover:bg-slate-100 rounded py-2 px-1'>
 
-                     <Link to={"all-products"} className='px-2 py-1text-center text-ellipsis' >All Products</Link>
+                     <Link to={"all-products"} className='px-2 py-1text-center text-ellipsis font-medium' >All Products</Link>
                     </div>
                      <div className='border-b  hover:bg-slate-100 rounded py-2 px-1'>
 
-                     <Link to={"all-order"} className='px-2 py-1 text-center text-ellipsis' >All Orders</Link>
+                     <Link to={"all-order"} className='px-2 py-1 text-center text-ellipsis font-medium' >All Orders</Link>
                     </div>
 
                 </nav>
