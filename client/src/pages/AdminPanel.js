@@ -37,15 +37,15 @@ const AdminPanel = () => {
                 <nav className=' grid p-4 text-center text-ellipsis'>
                     <div className='border-b  hover:bg-slate-100 rounded py-2 px-1'>
 
-                     <Link to={"all-user"} className='px-2 py-1 text-center text-ellipsis font-medium ' >  All Users</Link>
+                     <Link to={"all-user"} className='px-2 py-1 text-center text-ellipsis font-medium w-full' >  All Users</Link>
                     </div>
                     <div className='border-b  hover:bg-slate-100 rounded py-2 px-1'>
 
-                     <Link to={"all-products"} className='px-2 py-1text-center text-ellipsis font-medium' >All Products</Link>
+                     <Link to={"all-products"} className='px-2 py-1text-center text-ellipsis font-medium w-full' >All Products</Link>
                     </div>
                      <div className='border-b  hover:bg-slate-100 rounded py-2 px-1'>
 
-                     <Link to={"all-order"} className='px-2 py-1 text-center text-ellipsis font-medium' >All Orders</Link>
+                     <Link to={"all-order"} className='px-2 py-1 text-center text-ellipsis font-medium w-full' >All Orders</Link>
                     </div>
 
                 </nav>
