@@ -23,21 +23,30 @@ const AdminPanel = () => {
                     {user?.profilePic ?(
                         <img src={user.profilePic}
                          alt={user?.user?.name} 
-                         className='w-20 h-20 rounded-full ring-2 ring-red-500'
+                         className='w-20 h-20 p-2 rounded-full ring-2 ring-red-500'
                          />
                     ):( <FaRegCircleUser />)
                     }
                    
                 </div>
-                <p className='capitalize font-semibold text-lg '>{user?.name}</p>
+                <p className='capitalize font-semibold text-lg text-red-500 '>{user?.name}</p>
                 <p className='capitalize font-semibold text-sm '>{user?.role}</p>
 
             </div>
             <div>
                 <nav className=' grid p-4'>
+                    <div className='border-b'>
+
                      <Link to={"all-user"} className='px-2 py-1 hover:bg-slate-100 rounded' >  All Users</Link>
+                    </div>
+                    <div className='border-b'>
+
                      <Link to={"all-products"} className='px-2 py-1 hover:bg-slate-100 rounded' >All Products</Link>
+                    </div>
+                     <div className='border-b'>
+
                      <Link to={"all-order"} className='px-2 py-1 hover:bg-slate-100 rounded' >All Orders</Link>
+                    </div>
 
                 </nav>
             </div>

@@ -51,7 +51,7 @@ const Login = () => {
 
   return (
     <section id='login'>
-      <div className='mx-auto container p-4'>
+      <div className='mx-auto container p-4 min-h-[calc(100vh-120px)]'>
         <div className='bg-white w-full max-w-sm mx-auto rounded-md p-5 py-7'>
           <div className='w-20 h-20 mx-auto'>
             <img className='rounded-full overflow-hidden' src={loginIcon} alt="login icon" />
