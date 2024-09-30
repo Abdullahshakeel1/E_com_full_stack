@@ -36,7 +36,7 @@ const AllOrders = () => {
     userDataDetails()
   },[])
   return (
-    <div className='min-h-[calc(100vh-120px)]'>
+    <div className='h-[calc(100vh-190px)] overflow-y-scroll'>
       {
         !orderData[0]  && (
           <div className='min-h-[calc(100vh-155px)] flex items-center justify-center text-[30px] text-[#00000060] font-extrabold'>
@@ -44,7 +44,7 @@ const AllOrders = () => {
           </div>
         )
       }
-      <div className='p-4 w-full'>
+      <div className='p-4 '>
       {orderData.map((item, index) => (
             <div key={item.userId + index}>
               <p className='font-bold text-zinc-500 text-lg p-3'>{moment(item.createdAt).format('LL')}</p>
