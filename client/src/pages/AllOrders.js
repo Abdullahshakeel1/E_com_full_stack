@@ -36,7 +36,7 @@ const AllOrders = () => {
     userDataDetails()
   },[])
   return (
-    <div className='h-[calc(100vh-190px)] overflow-y-scroll scrollbar-none'>
+    <div className='h-[calc(100vh-155px)] overflow-y-scroll scrollbar-none'>
       {
         !orderData[0]  && (
           <div className='min-h-[calc(100vh-155px)] flex items-center justify-center text-[30px] text-[#00000060] font-extrabold'>
