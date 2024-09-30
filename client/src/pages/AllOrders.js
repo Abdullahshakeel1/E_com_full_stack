@@ -56,7 +56,7 @@ const AllOrders = () => {
               <div className='grid gap-2'>
                 {
                   item?.productDetails.map((product , i)=>(
-                    <div key={ i} className='flex md:h-28 items-center gap-3 shadow-md rounded-md overflow-hidden bg-slate-100 min-w-[calc(100vw-395px)]'>
+                    <div key={ i} className='flex md:h-28 items-center gap-3 shadow-md rounded-md overflow-hidden bg-slate-100 '>
                      <img className='w-28 h-28 bg-white rounded mix-blend-multiply object-scale-down p-2 border-r-2 border-slate-300' src={product.image[0]} alt="img" />
                      <div>
                      <div className='font-medium text-lg text-ellipsis line-clamp-1'>{product.name}</div>
