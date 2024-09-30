@@ -72,4 +72,7 @@ export const SummaryApi ={
     userOrders:{
         url:`${backendDomain}/api/v1/order/userOrders`,
     },
+    adminAllOrderController:{
+        url:`${backendDomain}/api/v1/order/adminAllOrderController`,
+    },
 }

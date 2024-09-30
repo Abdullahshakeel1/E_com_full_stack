@@ -166,3 +166,29 @@ export const userOrders =async (req, res)=>{
     })
   }
 }
+export const adminAllOrderController =async (req, res)=>{
+  try {
+   const userId =req.userID
+   const user =await User.findById(userId)
+   if(user.role !== "ADMIN"){
+    return res.status(500).json(
+      {
+        message : "you not access this"
+      }
+    )
+   }
+   const allOrder = await Order.find().sort({createdAt:-1})
+   return res.status(200).json({
+    data: allOrder,
+    success : true,
+    
+   })
+    
+  } catch (error) {
+    res.json({
+      error : true,
+      message : error || error.message,
+      success : false
+    })
+  }
+}
