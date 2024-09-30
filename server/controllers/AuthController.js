@@ -114,7 +114,12 @@ export const userDetails= async (req, res) => {
 
 export const logoutController = async(req, res) => {
     try {
-        res.clearCookie('token')
+        const tokenOptions ={
+            httpOnly: true,
+            secure: true,
+            sameSite:"none"
+           }
+        res.clearCookie('token',tokenOptions)
         res.json({
             data: [],
             success:true,
